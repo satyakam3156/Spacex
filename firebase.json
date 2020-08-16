@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": "dist/spacex-assocs/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "source": "dist/spacex-assocs"
+  }
+}

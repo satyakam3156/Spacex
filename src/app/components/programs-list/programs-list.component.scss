@@ -1,0 +1,33 @@
+.grid-container {
+  margin: 20px;
+  // width: 1000px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  max-width:300px;
+  margin:auto;
+  // width:40%;
+}
+.missionImg{
+  // width: 101%;
+  background-color: #efefff;
+}
+.missionImg img{
+  height: 100%;
+  width:100%;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: left;
+}

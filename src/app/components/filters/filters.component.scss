@@ -1,0 +1,22 @@
+.filter{
+    text-align:center;
+    min-width:225px;
+}
+.optionPanel{
+    // width:fit-content
+    margin-left:20px;
+    margin-right:20px;
+
+}
+.optionPanel button{
+    margin:10px;
+    background-color: #d0f991;
+    border:none;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:701px){
+    .column{
+        column-count: 2;
+    }
+} 

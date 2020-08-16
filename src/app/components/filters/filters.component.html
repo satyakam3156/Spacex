@@ -1,0 +1,22 @@
+<div class="filter">
+    <h4>Filters</h4>
+    <p>Launch Year</p>
+    <hr />
+    <div class="optionPanel column" >
+        <button name="year"*ngFor="let year of years" (click)="filter('year',year)">{{year}}</button>
+    </div>
+    <hr />
+    <p>Successful Launch</p>
+    <div class="optionPanel">
+        <button (click)="filter('launch',true)">True</button>
+        <button (click)="filter('launch',false)">False</button>
+    </div>
+    <hr />
+    <p>Successful Landing</p>
+    <div class="optionPanel">
+        <button (click)="filter('land',true)">True</button>
+        <button (click)="filter('land',true)">False</button>
+    </div>
+    <hr />
+    <button (click)="reset()">Reset</button>
+</div>

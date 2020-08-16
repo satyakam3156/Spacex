@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "spacexproject-b7292": {
+      "hosting": {
+        "spacex-assocs": [
+          "spacexproject-b7292"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "spacexproject-b7292"
+  }
+}

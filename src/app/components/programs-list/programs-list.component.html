@@ -1,0 +1,31 @@
+<div class="grid-container">
+  <mat-grid-list cols="{{cols}}" rowHeight="270px">
+    <mat-grid-tile *ngFor="let card of cards" [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <div class="missionImg">
+              <img [src]="card.links.mission_patch_small" />
+              </div>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <h3 style="color: blue;">{{card.mission_name}}#{{card.flight_number}}</h3>
+         <p><strong>Mission IDs:</strong><span>None</span></p> 
+         <p><strong>Launch Year:</strong><span>{{card.launch_year}}</span></p>
+         <p><strong>Successful Launch:</strong><span>{{card.launch_success}}</span></p>
+         <p><strong>Successful Landing:</strong><span>{{card.land_success}}</span></p>
+          
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
