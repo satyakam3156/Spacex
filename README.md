@@ -1,2 +1,2 @@
 # Spacex
-A project conisting of utilisation of spacex API.
+A project consisting of utilisation of spacex API.
